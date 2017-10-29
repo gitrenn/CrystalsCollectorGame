@@ -5,20 +5,140 @@
     <meta charset="UTF-8">
     <title>Crystals Collector</title>
 
-    <!-- Added link to the jQuery Library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Added link to the jQuery Library 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
 
     <!-- Added a link to Bootstrap-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">   
+    <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
+
 <body>
-    
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <div class="jumbotron jbt_custom">
+        <div class="container">
+            <h1 id="title_color">Crystals Collector!</h1>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row row-custom">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8">
+                <p>
+                    <button class="btn btn-light bdropdown" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false"
+                        aria-controls="collapseExample">
+                        Click to View Instructions
+                    </button>
+                    <button class="btn btn-danger">Clear</button>
+                </p>
+                <div class="collapse" id="collapseExample">
+                    <div class="card">
+                        <div class="card-body card_custom">
+                            <p>You will be given a random number at the start of the game.</p>
+                            <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points
+                                to your total score.</p>
+                            <p>You win the game by matching your total score to random number, you lose the game if your total
+                                score goes above the random number.</p>
+                            <p>The value of each crystal is hidden from you until you click on it.</p>
+                            <p>Each time when the game starts, the game will change the values of each crystal.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+        <div class="row row-custom">
+            <div class="col-2"></div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-header">
+                        Random Number
+                    </div>
+                    <div class="card-body card-num-height-custom">
+                        <blockquote class="blockquote mb-0">
+                            <h1 class="numText">0</h1>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-header">
+                        Stats
+                    </div>
+                    <div class="card-body">
+                        <blockquote class="blockquote mb-0">
+                            <div class="row">
+                                <div class="col-sm-8">
+                                    <p class="winText">Wins:</p>
+                                </div>
+                                <div class="col-sm-4">
+                                    <p class="winNum">0</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-8">
+                                    <p class="lossText">Losses:</p>
+                                </div>
+                                <div class="col-sm-4">
+                                    <p class="lossNum">0</p>
+                                </div>
+                            </div>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-custom">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-2">
+                <div class="crystal crystal-red">
+                    <img src="assets/images/red_crystal.png" alt="" class="img-custom">
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="crystal blue">
+                    <img src="assets/images/blue_crystal.png" alt="" class="img-custom">
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="crystal crystal-yellow">
+                    <img src="assets/images/yellow_crystal.png" alt="" class="img-custom">
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="crystal crystal-green">
+                    <img src="assets/images/green_crystal.png" alt="" class="img-custom">
+                </div>
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8">
+                <div class="card">
+                    <h4 class="card-header">Your total score is:</h4>
+                    <div class="card-body">
+                        <h4 class="card-title user-number">0</h4>
+                    </div>
+                    <div class="card-footer text-muted">
+                        Make your total score matches the random number!
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
     <script src="assets/javascript/game.js"></script>
 </body>
+
 </html>

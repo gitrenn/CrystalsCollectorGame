@@ -1,6 +1,31 @@
-*{   
-    margin: 0;    
-    padding: 0;    
-    box-sizing: border-box;
-    display: inline-block;
+h1 {
+    text-align: center;
+}
+
+/* #title_color{
+    color: #FFFFFF;
+} */
+
+.jbt_custom {
+    background-color: #e8ebef;
+    height: 150px;
+    padding: 40px;
+}
+
+/* .bdropdown {
+    background-color: #e8ebef;
+    border-style: none;    
+} */
+
+.card-num-height-custom {
+    height: 163.6px;
+}
+
+.row-custom {
+    margin-bottom: 10px;
+}
+
+.img-custom {
+    width: 100%;
+    
 }
