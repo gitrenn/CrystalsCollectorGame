@@ -18,6 +18,7 @@ $(document).ready(function(){
     }
 
     function clearResult(){
+        user_total = 0;
         $(".user-number").text(0);
         getRandomNum();
         getCrystalNum();
