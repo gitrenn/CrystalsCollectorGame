@@ -24,11 +24,13 @@ $(document).ready(function(){
         getCrystalNum();
     }
 
+    //generate a random number between 19 and 120
     function getRandomNum(){
         rand_num = Math.floor(Math.random() * (120 - 19 + 1)) + 19;
         $(".numText").text(rand_num);
     }
 
+    //generate a random number between 1 and 12;
     function getCrystalNum(){
         var redNum = Math.ceil(Math.random() * 12);
         $(".crystal-red").attr("value", redNum);
@@ -41,6 +43,7 @@ $(document).ready(function(){
         
     }
 
+    
     function setStats(){
         if(isEqual){
             $(".card-stats").text("You win!");
@@ -58,7 +61,7 @@ $(document).ready(function(){
 
     $(".crystal").on("click", function(){
         user_total += parseInt($(this).attr("value"));
-        console.log($(this).attr("value"));
+        //  console.log($(this).attr("value"));
         if(user_total < rand_num){
             $(".user-number").text(user_total);
             isEqual = false;

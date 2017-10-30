@@ -26,6 +26,10 @@ h1 {
 }
 
 .img-custom {
-    width: 100%;
-    
+    width: 100%;    
+}
+
+.img-custom:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2),
+    0 8px 16px 0 rgba(0,0,0,0.2);
 }
